@@ -69,8 +69,8 @@ struct ICM45686 : public ICM45Base {
 
 	bool initialize() {
 		ICM45Base::softResetIMU();
-		m_RegisterInterface.writeReg(Regs::Pin9Config::reg, Regs::Pin9Config::value);
-		m_RegisterInterface.writeReg(Regs::RtcConfig::reg, Regs::RtcConfig::value);
+		// m_RegisterInterface.writeReg(Regs::Pin9Config::reg, Regs::Pin9Config::value);
+		// m_RegisterInterface.writeReg(Regs::RtcConfig::reg, Regs::RtcConfig::value);
 		return ICM45Base::initializeBase();
 	}
 };
